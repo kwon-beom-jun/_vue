@@ -56,6 +56,7 @@ const routes = [
   // 데이타바인딩2
   {
     path: '/vbind',
+    name: 'DataBinding2',
     meta: { title: '바인딩(v-bind)' },
     children: [
       {
@@ -130,13 +131,103 @@ const routes = [
           import(/* webpackChunkName: "binding22" */ "../views/axios/AxiosGet1.vue"),
       },{
         path: "binding23",
-        meta: { title: "Asios Get2" },
+        meta: { title: "Asios Post2" },
         component: () =>
-          import(/* webpackChunkName: "binding23" */ "../views/axios/AxiosGet2.vue"),
+          import(/* webpackChunkName: "binding23" */ "../views/axios/AxiosPost2.vue"),
+      },{
+        path: "binding24",
+        meta: { title: "Asios html bind Post3" },
+        component: () =>
+          import(/* webpackChunkName: "binding24" */ "../views/axios/AxiosPost3.vue"),
+      },{
+        path: "binding25",
+        meta: { title: "Asios Static Instance" },
+        component: () =>
+          import(/* webpackChunkName: "binding25" */ "../views/axios/AxiosGlobal4.vue"),
+      },{
+        path: "binding26",
+        meta: { title: "Asios Sync, Async" },
+        component: () =>
+          import(/* webpackChunkName: "binding26" */ "../views/axios/AxiosSync5.vue"),
+      },{
+        path: "binding27",
+        meta: { title: "Component 및 부모-자식 개념" },
+        component: () =>
+          import(/* webpackChunkName: "binding27" */ "../views/compo/ParentComponent.vue"),
+      },{
+        path: "binding28",
+        meta: { title: "Component 부모-자식 이벤트 호출" },
+        component: () =>
+          import(/* webpackChunkName: "binding28" */ "../views/props/ParentCompo1.vue"),
+      },{
+        path: "binding29",
+        meta: { title: "Component 자식-부모 Emit " },
+        component: () =>
+          import(/* webpackChunkName: "binding29" */ "../views/props/ParentChildCompoEmit3.vue"),
+      },{
+        path: "binding30",
+        meta: { title: "Slot 기본 개념 " },
+        component: () =>
+          import(/* webpackChunkName: "binding30" */ "../views/slot/SlotParent.vue"),
+      },{
+        path: "binding31",
+        meta: { title: "Slot 응용 " },
+        component: () =>
+          import(/* webpackChunkName: "binding31" */ "../views/slot/SlotUseModalLayout.vue"),
+      },{
+        path: "binding32",
+        meta: { title: "provice-inject" },
+        component: () =>
+          import(/* webpackChunkName: "binding32" */ "../views/provideinject/RootComponent.vue"),
+      },{
+        path: "binding33",
+        meta: { title: "mixin " },
+        component: () =>
+          import(/* webpackChunkName: "binding33" */ "../views/mixin/UseMixinExample.vue"),
+      },{
+        path: "binding34",
+        meta: { title: "Calculator Optional " },
+        component: () =>
+          import(/* webpackChunkName: "binding34" */ "../views/composition/CalculatorOptional.vue"),
+      },{
+        path: "binding35",
+        meta: { title: "Calculator Composition " },
+        component: () =>
+          import(/* webpackChunkName: "binding35" */ "../views/composition/CalculatorComposition1.vue"),
       },
     ] 
-  }
+  },
 
+  // 데이타바인딩3
+  {
+    path: "/compo",
+    name: "CompositionApi1",
+    meta: { title: "컴포지션 API" },
+    children: [
+      {
+        path: "compo1",
+        meta: { title: "컴포지션 API - 개념 & 바인딩 & 계산기" },
+        component: () =>
+          import(
+            /* webpackChunkName: "compo1" */ "../views/composition/CalculatorComposition1.vue"
+          ),
+      },{
+        path: "compo2",
+        meta: { title: "컴포지션 API - Ref" },
+        component: () =>
+          import(
+            /* webpackChunkName: "compo2" */ "../views/composition/CompositionRef2.vue"
+          ),
+      },{
+        path: "compo3",
+        meta: { title: "컴포지션 API - Function" },
+        component: () =>
+          import(
+            /* webpackChunkName: "compo3" */ "../views/composition/CompositionFunction3.vue"
+          ),
+      }
+    ],
+  },
 
 ];
 
