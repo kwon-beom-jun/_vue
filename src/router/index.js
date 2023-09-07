@@ -225,6 +225,48 @@ const routes = [
           import(
             /* webpackChunkName: "compo3" */ "../views/composition/CompositionFunction3.vue"
           ),
+      },{
+        path: "compo4",
+        meta: { title: "컴포지션 API - LifeCycle" },
+        component: () =>
+          import(
+            /* webpackChunkName: "compo4" */ "../views/composition/CompositionLifeCycle4.vue"
+          ),
+      },{
+        path: "compo5",
+        meta: { title: "컴포지션 API - Props" },
+        component: () =>
+          import(
+            /* webpackChunkName: "compo5" */ "../views/composition/CompositionParent5.vue"
+          ),
+      },{
+        path: "compo6",
+        meta: { title: "컴포지션 API - Provide,Injection" },
+        component: () =>
+          import(
+            /* webpackChunkName: "compo6" */ "../views/composition/CompositionProvide6.vue"
+          ),
+      },{
+        path: "compo7",
+        meta: { title: "컴포지션 API - Script Setup" },
+        component: () =>
+          import(
+            /* webpackChunkName: "compo7" */ "../views/composition/setup/CompositionSetup.vue"
+          ),
+      },{
+        path: "compo8",
+        meta: { title: "Vuex 예제" },
+        component: () =>
+          import(
+            /* webpackChunkName: "compo8" */ "../views/vuex/UsersVuex.vue"
+          ),
+      },{
+        path: "compo9",
+        meta: { title: "Pinia 예제" },
+        component: () =>
+          import(
+            /* webpackChunkName: "compo9" */ "../views/pinia/PiniaExample.vue"
+          ),
       }
     ],
   },

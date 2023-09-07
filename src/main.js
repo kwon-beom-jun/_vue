@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import axios from "axios";
 import mixins from './mixins/mixins'
+import { createPinia } from 'pinia'
+import store from './store'
 
 /**
  *  main.js는 java main과 같이 정해진 파일이므로 명칭을 변경하면 안됌
@@ -40,6 +42,15 @@ app.use(router)
 
 // [mixin 추가]
 app.mixin(mixins)
+
+// ------------------------------------------------------------------------------
+
+//[Vuex, Pinia 사용법]
+
+// 보통 같이 쓰지 않음, 강사님이 주석처리 안하면?
+app.use(store)
+
+app.use(createPinia())
 
 // ------------------------------------------------------------------------------
 

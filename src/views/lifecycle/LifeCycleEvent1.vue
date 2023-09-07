@@ -38,6 +38,7 @@ export default {
     console.log('beforeCreate() ..')
   },
   // Vue객체(컨테이너?)가 생성됨
+  // this. 사용 불가
   created() {
     console.log('created() ..')
   },

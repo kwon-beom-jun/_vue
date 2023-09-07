@@ -1,8 +1,7 @@
 <template>
   <p class="comp-name">가장 큰 부모(Big Component)</p>
 
-  <span class="inject-text"
-    >provide :
+  <span class="inject-text">provide :
     <span class="inject-value">'inject props'</span>
   </span>
 
@@ -18,7 +17,13 @@
 
     data() : 자기 자신한테 쓸 키 :value 형식
     props : 자식이 쓸 키 :value 형식
-    provice/inject : 자식 또는 자손이 쓸 키 :value 형식
+    provide/inject : 자식 또는 자손이 쓸 키 :value 형식
+
+    props vs inject
+      공통점 : 둘다 Component로 보내줘야함(<template/> 내부에 기입)
+      차이점
+        props : <컴포넌트 name:"값">으로 보내줘야함
+        provide/inject : 사용하고자 하는 컴포넌트에서 inject로 빼서 사용
  */
 import FirstComponent from '@/views/provideinject/FirstComponent.vue'
 

@@ -3,7 +3,7 @@
     <p class="comp-name">Third Component</p>
     <p>props : {{ name }}</p>
 
-    <span class="inject-text">inject props :<br/>
+    <span class="inject-text">third inject props :<br/>
       &nbsp;&nbsp;<span class="inject-value">{{ injectProps }}</span><br/>
       &nbsp;&nbsp;<span class="">{{ testValue }}</span>
     </span>
